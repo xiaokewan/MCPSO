@@ -41,12 +41,12 @@ close all;
     empty_particle.Best.Cost = [];
 
     % Create Population Array
-    slave_particle = repmat(empty_particle, nPops, ssn);				%The range of one slave swarm
-	master_particle = repmat(empty_particle, nPopm, 1);                 %The range of master swarm
+    slave_particle = repmat(empty_particle, nPops, ssn);		%The range of one slave swarm
+	master_particle = repmat(empty_particle, nPopm, 1);             %The range of master swarm
 
 	
     % Initialize Global Best
-    GlobalBest1.Cost = inf;                                              % Initialize GlobalBest of whole slave swarms
+    GlobalBest1.Cost = inf;                                             % Initialize GlobalBest of whole slave swarms
     GlobalBest2.Cost = inf;
     emptySlaveGlobalBest.Cost=inf;
     emptySlaveGlobalBest.Position=[];
@@ -154,7 +154,7 @@ close all;
 
 %% master swarm evaluation
         for i = 1:nPopm
-			% Update Velocity
+	    % Update Velocity
             master_particle(i).Velocity = w*master_particle(i).Velocity ...
                 + c1*rand(VarSize).*(master_particle(i).Best.Position - master_particle(i).Position) ...
                 + c2*rand(VarSize).*(GlobalBest2.Position - master_particle(i).Position)...
