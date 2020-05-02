@@ -1,4 +1,5 @@
 # MCPSO
 ### A multi-sawrm cooperative particle swarm optimizer
 MCPSO, multi-swarm cooperative particle swarm optimizer, inspired by the phenomenon of symbiosis in natural ecosystems. MCPSO is based on a master–slave model, in which a population consists of one master swarm and several slave swarms. The slave swarms execute a single PSO or its variants independently to maintain the diversity of particles, while the master swarm evolves based on its own knowledge and also the knowledge of the slave swarms. According to the co-evolutionary relationship between master swarm and slave swarms, two versions of MCPSO are proposed, namely the competitive version of MCPSO (COM-MCPSO) and the collaborative version of MCPSO (COL-MCPSO), where the master swarm enhances its particles based on an antagonistic scenario or a synergistic scenario, respectively. In the simulation studies, several benchmark functions are performed, and the performances of the proposed algorithms are compared with the standard PSO (SPSO) and its variants to demonstrate the superiority of MCPSO.
-**Reference:Ben Niu, Yunlong Zhu, Xiaoxian He, Henry Wu,MCPSO:A multi-sawrm cooperative particle swarm optimizer.
+
+**Reference:Ben Niu, Yunlong Zhu, Xiaoxian He, Henry Wu,MCPSO:A multi-sawrm cooperative particle swarm optimizer**
